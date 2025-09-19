@@ -459,6 +459,14 @@ def visualize_command(args):
                 plots_created.append(f"Queue heatmap: {path}")
         
         if 'comparison' in args.plots and comparison_results:
+            # Try to make comparison heatmap if detailed results are present
+            base = comparison_results.get('baseline_eval_results') or {}
+            trained = comparison_results.get('trained_eval_results') or {}
+            ch = plotter.plot_queue_heatmap_comparison(base, trained)
+            if ch:
+                plots_created.append(f"Queue heatmap comparison: {ch}")
+        
+        if 'comparison' in args.plots and comparison_results:
             path = plotter.plot_comparison_chart(comparison_results)
             if path:
                 plots_created.append(f"Comparison chart: {path}")

@@ -430,7 +430,9 @@ class EvaluationRunner:
             'num_episodes': num_episodes,
             'baseline_metrics': baseline_results['detailed_metrics'],
             'trained_metrics': trained_results['detailed_metrics'],
-            'improvements': {}
+            'improvements': {},
+            'baseline_eval_results': baseline_results,
+            'trained_eval_results': trained_results
         }
         
         # Calculate improvements (negative values mean worse performance)
@@ -470,10 +472,12 @@ class EvaluationRunner:
             observations, _ = self.env.reset()
             
             episode_data = {
+                'episode_id': episode,
                 'queue_lengths': [],
                 'waiting_times': [],
                 'vehicles_passed': 0,
-                'total_reward': 0
+                'total_reward': 0,
+                'actions': []
             }
             
             done = False
@@ -495,6 +499,7 @@ class EvaluationRunner:
                 done = bool(terminated.get('__all__', False) or truncated.get('__all__', False))
                 
                 # Collect metrics
+                episode_data['actions'].append(actions.copy())
                 episode_data['total_reward'] += sum(rewards.values())
                 
                 for agent_id in self.env.agent_names:

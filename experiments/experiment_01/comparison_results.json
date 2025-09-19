@@ -1,0 +1,1094 @@
+{
+  "evaluation_results": {
+    "summary": {
+      "num_episodes": 30,
+      "primary_metric": 0.4301631944444445,
+      "supporting_metrics": {
+        "average_waiting_time": 15.375424595866585,
+        "average_queue_length": 8.60326388888889,
+        "throughput": 1570.8666666666666
+      }
+    },
+    "detailed_metrics": {
+      "stopped_vehicle_ratio": 0.4301631944444445,
+      "average_waiting_time": 15.375424595866585,
+      "average_queue_length": 8.60326388888889,
+      "throughput": 1570.8666666666666
+    },
+    "reward_statistics": {
+      "mean": -309.7174999999999,
+      "std": 13.657585880503664,
+      "min": -338.5374999999998,
+      "max": -286.5499999999998
+    },
+    "metrics_tracker_summary": {
+      "stopped_vehicle_ratio_mean": 0.43016319444444445,
+      "stopped_vehicle_ratio_std": 0.01896886927847733,
+      "stopped_vehicle_ratio_min": 0.39798611111111115,
+      "stopped_vehicle_ratio_max": 0.47019097222222217,
+      "average_waiting_time_mean": 15.375424595866585,
+      "average_waiting_time_std": 1.0272737778277805,
+      "average_waiting_time_min": 13.462162369551873,
+      "average_waiting_time_max": 17.76299109883364,
+      "average_queue_length_mean": 8.603263888888888,
+      "average_queue_length_std": 0.3793773855695466,
+      "average_queue_length_min": 7.959722222222222,
+      "average_queue_length_max": 9.403819444444444,
+      "throughput_mean": 1570.8733333333334,
+      "throughput_std": 251.42378012991298,
+      "throughput_min": 1194.6666666666667,
+      "throughput_max": 2164.0666666666666,
+      "reward_mean": -0.43016319444444445,
+      "reward_std": 0.01896886927847733,
+      "reward_min": -0.47019097222222217,
+      "reward_max": -0.39798611111111115
+    },
+    "action_analysis": {
+      "agent_distributions": {
+        "agent_0": {
+          "0": 1.0
+        },
+        "agent_1": {
+          "2": 0.9892592592592593,
+          "3": 0.01074074074074074
+        },
+        "agent_2": {
+          "1": 1.0
+        },
+        "agent_3": {
+          "2": 1.0
+        }
+      },
+      "overall_distribution": {
+        "0": 0.25,
+        "1": 0.25,
+        "2": 0.4973148148148148,
+        "3": 0.002685185185185185
+      },
+      "phase_transitions": {
+        "raw_counts": {
+          "3->2": 57,
+          "2->3": 41
+        },
+        "percentages": {
+          "3->2": 58.16326530612245,
+          "2->3": 41.83673469387755
+        },
+        "total_transitions": 98
+      }
+    },
+    "episode_performance": [
+      {
+        "episode": 0,
+        "total_reward": -320.11249999999984,
+        "avg_queue_length": 8.892013888888888,
+        "avg_waiting_time": 16.044851135666054,
+        "vehicles_passed": 59660
+      },
+      {
+        "episode": 1,
+        "total_reward": -286.5499999999998,
+        "avg_queue_length": 7.959722222222222,
+        "avg_waiting_time": 14.071109576427256,
+        "vehicles_passed": 39191
+      },
+      {
+        "episode": 2,
+        "total_reward": -334.1499999999998,
+        "avg_queue_length": 9.281944444444445,
+        "avg_waiting_time": 17.318462246777163,
+        "vehicles_passed": 50708
+      },
+      {
+        "episode": 3,
+        "total_reward": -322.3499999999998,
+        "avg_queue_length": 8.954166666666667,
+        "avg_waiting_time": 16.203637200736647,
+        "vehicles_passed": 61872
+      },
+      {
+        "episode": 4,
+        "total_reward": -320.4874999999999,
+        "avg_queue_length": 8.902430555555556,
+        "avg_waiting_time": 16.056806322897483,
+        "vehicles_passed": 52752
+      },
+      {
+        "episode": 5,
+        "total_reward": -319.2374999999997,
+        "avg_queue_length": 8.867708333333333,
+        "avg_waiting_time": 16.019636279926335,
+        "vehicles_passed": 53307
+      },
+      {
+        "episode": 6,
+        "total_reward": -321.4499999999999,
+        "avg_queue_length": 8.929166666666667,
+        "avg_waiting_time": 16.209468999386125,
+        "vehicles_passed": 43162
+      },
+      {
+        "episode": 7,
+        "total_reward": -327.0499999999999,
+        "avg_queue_length": 9.084722222222222,
+        "avg_waiting_time": 16.66998158379374,
+        "vehicles_passed": 50924
+      },
+      {
+        "episode": 8,
+        "total_reward": -295.15,
+        "avg_queue_length": 8.198611111111111,
+        "avg_waiting_time": 13.981767955801105,
+        "vehicles_passed": 42815
+      },
+      {
+        "episode": 9,
+        "total_reward": -312.4000000000001,
+        "avg_queue_length": 8.677777777777777,
+        "avg_waiting_time": 15.490600061387354,
+        "vehicles_passed": 45438
+      },
+      {
+        "episode": 10,
+        "total_reward": -322.59999999999997,
+        "avg_queue_length": 8.96111111111111,
+        "avg_waiting_time": 16.244337016574587,
+        "vehicles_passed": 49860
+      },
+      {
+        "episode": 11,
+        "total_reward": -338.5374999999998,
+        "avg_queue_length": 9.403819444444444,
+        "avg_waiting_time": 17.76299109883364,
+        "vehicles_passed": 64922
+      },
+      {
+        "episode": 12,
+        "total_reward": -296.86249999999995,
+        "avg_queue_length": 8.246180555555556,
+        "avg_waiting_time": 14.274792817679558,
+        "vehicles_passed": 42551
+      },
+      {
+        "episode": 13,
+        "total_reward": -313.5124999999999,
+        "avg_queue_length": 8.708680555555556,
+        "avg_waiting_time": 15.438067833026397,
+        "vehicles_passed": 54090
+      },
+      {
+        "episode": 14,
+        "total_reward": -304.1000000000003,
+        "avg_queue_length": 8.447222222222223,
+        "avg_waiting_time": 15.1856737262124,
+        "vehicles_passed": 36777
+      },
+      {
+        "episode": 15,
+        "total_reward": -294.09999999999997,
+        "avg_queue_length": 8.169444444444444,
+        "avg_waiting_time": 14.229051565377532,
+        "vehicles_passed": 37547
+      },
+      {
+        "episode": 16,
+        "total_reward": -299.61250000000007,
+        "avg_queue_length": 8.322569444444444,
+        "avg_waiting_time": 14.595296193984039,
+        "vehicles_passed": 39744
+      },
+      {
+        "episode": 17,
+        "total_reward": -301.88749999999993,
+        "avg_queue_length": 8.385763888888889,
+        "avg_waiting_time": 14.694551872314303,
+        "vehicles_passed": 49752
+      },
+      {
+        "episode": 18,
+        "total_reward": -314.05,
+        "avg_queue_length": 8.723611111111111,
+        "avg_waiting_time": 15.583717004297116,
+        "vehicles_passed": 35840
+      },
+      {
+        "episode": 19,
+        "total_reward": -290.46249999999975,
+        "avg_queue_length": 8.068402777777777,
+        "avg_waiting_time": 14.405210251688152,
+        "vehicles_passed": 50388
+      },
+      {
+        "episode": 20,
+        "total_reward": -294.54999999999984,
+        "avg_queue_length": 8.181944444444444,
+        "avg_waiting_time": 14.079650092081032,
+        "vehicles_passed": 40553
+      },
+      {
+        "episode": 21,
+        "total_reward": -313.6624999999999,
+        "avg_queue_length": 8.712847222222223,
+        "avg_waiting_time": 15.717687231430325,
+        "vehicles_passed": 50235
+      },
+      {
+        "episode": 22,
+        "total_reward": -287.31249999999983,
+        "avg_queue_length": 7.980902777777778,
+        "avg_waiting_time": 13.462162369551873,
+        "vehicles_passed": 39646
+      },
+      {
+        "episode": 23,
+        "total_reward": -300.56249999999983,
+        "avg_queue_length": 8.348958333333334,
+        "avg_waiting_time": 14.78425414364641,
+        "vehicles_passed": 38707
+      },
+      {
+        "episode": 24,
+        "total_reward": -317.9875000000004,
+        "avg_queue_length": 8.832986111111111,
+        "avg_waiting_time": 16.229120626151012,
+        "vehicles_passed": 50931
+      },
+      {
+        "episode": 25,
+        "total_reward": -295.81250000000017,
+        "avg_queue_length": 8.21701388888889,
+        "avg_waiting_time": 14.33744628606507,
+        "vehicles_passed": 54431
+      },
+      {
+        "episode": 26,
+        "total_reward": -305.22499999999974,
+        "avg_queue_length": 8.478472222222223,
+        "avg_waiting_time": 15.187760896255371,
+        "vehicles_passed": 49617
+      },
+      {
+        "episode": 27,
+        "total_reward": -324.2124999999999,
+        "avg_queue_length": 9.005902777777777,
+        "avg_waiting_time": 16.413228974831185,
+        "vehicles_passed": 41722
+      },
+      {
+        "episode": 28,
+        "total_reward": -308.21250000000015,
+        "avg_queue_length": 8.561458333333333,
+        "avg_waiting_time": 15.1783379373849,
+        "vehicles_passed": 39369
+      },
+      {
+        "episode": 29,
+        "total_reward": -309.3250000000001,
+        "avg_queue_length": 8.592361111111112,
+        "avg_waiting_time": 15.393078575813382,
+        "vehicles_passed": 47275
+      }
+    ],
+    "config": {
+      "env": {
+        "type": "mock_traffic",
+        "n_agents": 4,
+        "episode_length": 1800,
+        "decision_frequency": 10,
+        "state_dim": 25,
+        "action_dim": 4,
+        "max_queue_length": 20
+      },
+      "agent": {
+        "type": "dqn",
+        "learning_rate": 0.001,
+        "gamma": 0.97,
+        "epsilon_start": 1.0,
+        "epsilon_end": 0.1,
+        "epsilon_decay": 5000,
+        "buffer_size": 50000,
+        "target_update_freq": 500,
+        "hidden_dim": 128
+      },
+      "training": {
+        "algorithm": "offline",
+        "episodes": 15,
+        "batch_size": 64,
+        "epochs_per_episode": 1,
+        "update_frequency": 1,
+        "gradient_clip_norm": 1.0
+      },
+      "ctde": {
+        "central_critic": true,
+        "critic_lr": 0.0005,
+        "critic_hidden_dim": 128
+      },
+      "reward": {
+        "alpha": 1.0,
+        "normalize": true,
+        "clip_reward": 5.0
+      },
+      "evaluation": {
+        "episodes": 10,
+        "frequency": 5,
+        "render": false
+      },
+      "logging": {
+        "log_frequency": 10,
+        "save_frequency": 20,
+        "tensorboard": true
+      },
+      "seed": 42,
+      "dataset": {
+        "synthetic_path": "datasets/synthetic",
+        "semi_synthetic_path": "datasets/semi_synthetic"
+      },
+      "experiment": {
+        "name": "experiment_01_quick",
+        "description": "Quick DQN training with reduced complexity and fewer epochs"
+      }
+    }
+  },
+  "comparison_results": {
+    "baseline_policy": "fixed_time",
+    "num_episodes": 30,
+    "baseline_metrics": {
+      "stopped_vehicle_ratio": 0.06267766203703704,
+      "average_waiting_time": 2.834835533046859,
+      "average_queue_length": 1.2535532407407408,
+      "throughput": 3015.133333333333
+    },
+    "trained_metrics": {
+      "stopped_vehicle_ratio": 0.4321481481481481,
+      "average_waiting_time": 15.417327092285657,
+      "average_queue_length": 8.642962962962963,
+      "throughput": 1500.0666666666666
+    },
+    "improvements": {
+      "stopped_vehicle_ratio": -589.4771344419105,
+      "average_waiting_time": -443.85261199669077,
+      "average_queue_length": -589.4771344419104,
+      "throughput": -50.248745218564125
+    },
+    "baseline_eval_results": {
+      "summary": {
+        "num_episodes": 30,
+        "primary_metric": 0.06267766203703704,
+        "supporting_metrics": {
+          "average_waiting_time": 2.834835533046859,
+          "average_queue_length": 1.2535532407407408,
+          "throughput": 3015.133333333333
+        }
+      },
+      "detailed_metrics": {
+        "stopped_vehicle_ratio": 0.06267766203703704,
+        "average_waiting_time": 2.834835533046859,
+        "average_queue_length": 1.2535532407407408,
+        "throughput": 3015.133333333333
+      },
+      "reward_statistics": {
+        "mean": -45.12791666666667,
+        "std": 8.745742227967595,
+        "min": -65.86249999999997,
+        "max": -24.749999999999993
+      },
+      "metrics_tracker_summary": {
+        "stopped_vehicle_ratio_mean": 0.43016319444444445,
+        "stopped_vehicle_ratio_std": 0.01896886927847733,
+        "stopped_vehicle_ratio_min": 0.39798611111111115,
+        "stopped_vehicle_ratio_max": 0.47019097222222217,
+        "average_waiting_time_mean": 15.375424595866585,
+        "average_waiting_time_std": 1.0272737778277805,
+        "average_waiting_time_min": 13.462162369551873,
+        "average_waiting_time_max": 17.76299109883364,
+        "average_queue_length_mean": 8.603263888888888,
+        "average_queue_length_std": 0.3793773855695466,
+        "average_queue_length_min": 7.959722222222222,
+        "average_queue_length_max": 9.403819444444444,
+        "throughput_mean": 1570.8733333333334,
+        "throughput_std": 251.42378012991298,
+        "throughput_min": 1194.6666666666667,
+        "throughput_max": 2164.0666666666666,
+        "reward_mean": -0.43016319444444445,
+        "reward_std": 0.01896886927847733,
+        "reward_min": -0.47019097222222217,
+        "reward_max": -0.39798611111111115
+      },
+      "action_analysis": {
+        "agent_distributions": {
+          "agent_0": {
+            "0": 0.25,
+            "1": 0.25,
+            "2": 0.25,
+            "3": 0.25
+          },
+          "agent_1": {
+            "0": 0.25,
+            "1": 0.25,
+            "2": 0.25,
+            "3": 0.25
+          },
+          "agent_2": {
+            "0": 0.25,
+            "1": 0.25,
+            "2": 0.25,
+            "3": 0.25
+          },
+          "agent_3": {
+            "0": 0.25,
+            "1": 0.25,
+            "2": 0.25,
+            "3": 0.25
+          }
+        },
+        "overall_distribution": {
+          "0": 0.25,
+          "1": 0.25,
+          "2": 0.25,
+          "3": 0.25
+        },
+        "phase_transitions": {
+          "raw_counts": {
+            "0->1": 1080,
+            "1->2": 1080,
+            "2->3": 1080,
+            "3->0": 960
+          },
+          "percentages": {
+            "0->1": 25.71428571428571,
+            "1->2": 25.71428571428571,
+            "2->3": 25.71428571428571,
+            "3->0": 22.857142857142858
+          },
+          "total_transitions": 4200
+        }
+      },
+      "episode_performance": [
+        {
+          "episode": 0,
+          "total_reward": -32.24999999999998,
+          "avg_queue_length": 0.8958333333333334,
+          "avg_waiting_time": 2.023426949048496,
+          "vehicles_passed": 71076
+        },
+        {
+          "episode": 1,
+          "total_reward": -48.712500000000006,
+          "avg_queue_length": 1.353125,
+          "avg_waiting_time": 3.051780233271946,
+          "vehicles_passed": 106861
+        },
+        {
+          "episode": 2,
+          "total_reward": -39.750000000000014,
+          "avg_queue_length": 1.1041666666666667,
+          "avg_waiting_time": 2.5692833026396564,
+          "vehicles_passed": 86250
+        },
+        {
+          "episode": 3,
+          "total_reward": -49.924999999999976,
+          "avg_queue_length": 1.3868055555555556,
+          "avg_waiting_time": 3.0740945365254757,
+          "vehicles_passed": 94404
+        },
+        {
+          "episode": 4,
+          "total_reward": -44.487500000000004,
+          "avg_queue_length": 1.2357638888888889,
+          "avg_waiting_time": 2.839671577655003,
+          "vehicles_passed": 88405
+        },
+        {
+          "episode": 5,
+          "total_reward": -32.84999999999999,
+          "avg_queue_length": 0.9125,
+          "avg_waiting_time": 2.0788674033149173,
+          "vehicles_passed": 71145
+        },
+        {
+          "episode": 6,
+          "total_reward": -58.05000000000001,
+          "avg_queue_length": 1.6125,
+          "avg_waiting_time": 3.5530923879680785,
+          "vehicles_passed": 108379
+        },
+        {
+          "episode": 7,
+          "total_reward": -39.60000000000003,
+          "avg_queue_length": 1.1,
+          "avg_waiting_time": 2.605939226519337,
+          "vehicles_passed": 80469
+        },
+        {
+          "episode": 8,
+          "total_reward": -44.412500000000016,
+          "avg_queue_length": 1.2336805555555554,
+          "avg_waiting_time": 2.7722375690607737,
+          "vehicles_passed": 86423
+        },
+        {
+          "episode": 9,
+          "total_reward": -38.912499999999994,
+          "avg_queue_length": 1.0809027777777778,
+          "avg_waiting_time": 2.522329650092081,
+          "vehicles_passed": 84570
+        },
+        {
+          "episode": 10,
+          "total_reward": -55.23750000000002,
+          "avg_queue_length": 1.534375,
+          "avg_waiting_time": 3.3438842848373236,
+          "vehicles_passed": 105222
+        },
+        {
+          "episode": 11,
+          "total_reward": -51.8,
+          "avg_queue_length": 1.4388888888888889,
+          "avg_waiting_time": 3.0607734806629834,
+          "vehicles_passed": 100818
+        },
+        {
+          "episode": 12,
+          "total_reward": -49.824999999999996,
+          "avg_queue_length": 1.3840277777777779,
+          "avg_waiting_time": 2.8066528545119707,
+          "vehicles_passed": 96543
+        },
+        {
+          "episode": 13,
+          "total_reward": -65.86249999999997,
+          "avg_queue_length": 1.8295138888888889,
+          "avg_waiting_time": 3.9337093308778392,
+          "vehicles_passed": 119430
+        },
+        {
+          "episode": 14,
+          "total_reward": -49.499999999999986,
+          "avg_queue_length": 1.375,
+          "avg_waiting_time": 3.1771639042357274,
+          "vehicles_passed": 102858
+        },
+        {
+          "episode": 15,
+          "total_reward": -47.5625,
+          "avg_queue_length": 1.3211805555555556,
+          "avg_waiting_time": 3.1054481276856967,
+          "vehicles_passed": 92183
+        },
+        {
+          "episode": 16,
+          "total_reward": -40.499999999999986,
+          "avg_queue_length": 1.125,
+          "avg_waiting_time": 2.5583793738489873,
+          "vehicles_passed": 83114
+        },
+        {
+          "episode": 17,
+          "total_reward": -33.01249999999999,
+          "avg_queue_length": 0.9170138888888889,
+          "avg_waiting_time": 2.187952731737262,
+          "vehicles_passed": 72528
+        },
+        {
+          "episode": 18,
+          "total_reward": -40.300000000000004,
+          "avg_queue_length": 1.1194444444444445,
+          "avg_waiting_time": 2.516728054020872,
+          "vehicles_passed": 88402
+        },
+        {
+          "episode": 19,
+          "total_reward": -37.6,
+          "avg_queue_length": 1.0444444444444445,
+          "avg_waiting_time": 2.219014732965009,
+          "vehicles_passed": 74813
+        },
+        {
+          "episode": 20,
+          "total_reward": -38.775000000000006,
+          "avg_queue_length": 1.0770833333333334,
+          "avg_waiting_time": 2.4384821976672804,
+          "vehicles_passed": 77590
+        },
+        {
+          "episode": 21,
+          "total_reward": -39.43750000000002,
+          "avg_queue_length": 1.0954861111111112,
+          "avg_waiting_time": 2.6100138121546963,
+          "vehicles_passed": 81190
+        },
+        {
+          "episode": 22,
+          "total_reward": -49.45000000000002,
+          "avg_queue_length": 1.3736111111111111,
+          "avg_waiting_time": 3.237507673419276,
+          "vehicles_passed": 96281
+        },
+        {
+          "episode": 23,
+          "total_reward": -52.574999999999996,
+          "avg_queue_length": 1.4604166666666667,
+          "avg_waiting_time": 3.469221915285451,
+          "vehicles_passed": 104640
+        },
+        {
+          "episode": 24,
+          "total_reward": -54.13750000000002,
+          "avg_queue_length": 1.5038194444444444,
+          "avg_waiting_time": 3.4473373235113565,
+          "vehicles_passed": 105385
+        },
+        {
+          "episode": 25,
+          "total_reward": -46.18750000000002,
+          "avg_queue_length": 1.2829861111111112,
+          "avg_waiting_time": 2.8237108655616945,
+          "vehicles_passed": 90107
+        },
+        {
+          "episode": 26,
+          "total_reward": -43.699999999999974,
+          "avg_queue_length": 1.2138888888888888,
+          "avg_waiting_time": 2.644858809085328,
+          "vehicles_passed": 84723
+        },
+        {
+          "episode": 27,
+          "total_reward": -57.525,
+          "avg_queue_length": 1.5979166666666667,
+          "avg_waiting_time": 3.5797421731123387,
+          "vehicles_passed": 108873
+        },
+        {
+          "episode": 28,
+          "total_reward": -47.15000000000003,
+          "avg_queue_length": 1.3097222222222222,
+          "avg_waiting_time": 3.042817679558011,
+          "vehicles_passed": 92659
+        },
+        {
+          "episode": 29,
+          "total_reward": -24.749999999999993,
+          "avg_queue_length": 0.6875,
+          "avg_waiting_time": 1.7509438305709024,
+          "vehicles_passed": 58292
+        }
+      ],
+      "config": {
+        "env": {
+          "type": "mock_traffic",
+          "n_agents": 4,
+          "episode_length": 1800,
+          "decision_frequency": 10,
+          "state_dim": 25,
+          "action_dim": 4,
+          "max_queue_length": 20
+        },
+        "agent": {
+          "type": "dqn",
+          "learning_rate": 0.001,
+          "gamma": 0.97,
+          "epsilon_start": 1.0,
+          "epsilon_end": 0.1,
+          "epsilon_decay": 5000,
+          "buffer_size": 50000,
+          "target_update_freq": 500,
+          "hidden_dim": 128
+        },
+        "training": {
+          "algorithm": "offline",
+          "episodes": 15,
+          "batch_size": 64,
+          "epochs_per_episode": 1,
+          "update_frequency": 1,
+          "gradient_clip_norm": 1.0
+        },
+        "ctde": {
+          "central_critic": true,
+          "critic_lr": 0.0005,
+          "critic_hidden_dim": 128
+        },
+        "reward": {
+          "alpha": 1.0,
+          "normalize": true,
+          "clip_reward": 5.0
+        },
+        "evaluation": {
+          "episodes": 10,
+          "frequency": 5,
+          "render": false
+        },
+        "logging": {
+          "log_frequency": 10,
+          "save_frequency": 20,
+          "tensorboard": true
+        },
+        "seed": 42,
+        "dataset": {
+          "synthetic_path": "datasets/synthetic",
+          "semi_synthetic_path": "datasets/semi_synthetic"
+        },
+        "experiment": {
+          "name": "experiment_01_quick",
+          "description": "Quick DQN training with reduced complexity and fewer epochs"
+        }
+      }
+    },
+    "trained_eval_results": {
+      "summary": {
+        "num_episodes": 30,
+        "primary_metric": 0.4321481481481481,
+        "supporting_metrics": {
+          "average_waiting_time": 15.417327092285657,
+          "average_queue_length": 8.642962962962963,
+          "throughput": 1500.0666666666666
+        }
+      },
+      "detailed_metrics": {
+        "stopped_vehicle_ratio": 0.4321481481481481,
+        "average_waiting_time": 15.417327092285657,
+        "average_queue_length": 8.642962962962963,
+        "throughput": 1500.0666666666666
+      },
+      "reward_statistics": {
+        "mean": -311.1466666666666,
+        "std": 11.345172859953342,
+        "min": -333.04999999999995,
+        "max": -288.8750000000001
+      },
+      "metrics_tracker_summary": {
+        "stopped_vehicle_ratio_mean": 0.4321481481481481,
+        "stopped_vehicle_ratio_std": 0.01575718452771299,
+        "stopped_vehicle_ratio_min": 0.40121527777777777,
+        "stopped_vehicle_ratio_max": 0.46256944444444437,
+        "average_waiting_time_mean": 15.417327092285655,
+        "average_waiting_time_std": 0.8779943903588588,
+        "average_waiting_time_min": 13.863075506445671,
+        "average_waiting_time_max": 17.217633517495397,
+        "average_queue_length_mean": 8.642962962962963,
+        "average_queue_length_std": 0.31514369055425984,
+        "average_queue_length_min": 8.024305555555555,
+        "average_queue_length_max": 9.251388888888888,
+        "throughput_mean": 1500.0755555555554,
+        "throughput_std": 251.16408181716935,
+        "throughput_min": 1072.7,
+        "throughput_max": 2031.4,
+        "reward_mean": -0.4321481481481481,
+        "reward_std": 0.01575718452771299,
+        "reward_min": -0.46256944444444437,
+        "reward_max": -0.40121527777777777
+      },
+      "action_analysis": {
+        "agent_distributions": {
+          "agent_0": {
+            "0": 1.0
+          },
+          "agent_1": {
+            "2": 0.9918518518518519,
+            "3": 0.008148148148148147
+          },
+          "agent_2": {
+            "1": 1.0
+          },
+          "agent_3": {
+            "2": 1.0
+          }
+        },
+        "overall_distribution": {
+          "0": 0.25,
+          "1": 0.25,
+          "2": 0.49796296296296294,
+          "3": 0.002037037037037037
+        },
+        "phase_transitions": {
+          "raw_counts": {
+            "3->2": 44,
+            "2->3": 22
+          },
+          "percentages": {
+            "3->2": 66.66666666666666,
+            "2->3": 33.33333333333333
+          },
+          "total_transitions": 66
+        }
+      },
+      "episode_performance": [
+        {
+          "episode": 0,
+          "total_reward": -321.3750000000001,
+          "avg_queue_length": 8.927083333333334,
+          "avg_waiting_time": 16.26850061387354,
+          "vehicles_passed": 41722
+        },
+        {
+          "episode": 1,
+          "total_reward": -317.325,
+          "avg_queue_length": 8.814583333333333,
+          "avg_waiting_time": 15.855678330263965,
+          "vehicles_passed": 46191
+        },
+        {
+          "episode": 2,
+          "total_reward": -301.40000000000015,
+          "avg_queue_length": 8.372222222222222,
+          "avg_waiting_time": 14.675345303867402,
+          "vehicles_passed": 41169
+        },
+        {
+          "episode": 3,
+          "total_reward": -308.0749999999999,
+          "avg_queue_length": 8.557638888888889,
+          "avg_waiting_time": 14.895319214241866,
+          "vehicles_passed": 60942
+        },
+        {
+          "episode": 4,
+          "total_reward": -312.9249999999999,
+          "avg_queue_length": 8.692361111111111,
+          "avg_waiting_time": 15.467303560466544,
+          "vehicles_passed": 50998
+        },
+        {
+          "episode": 5,
+          "total_reward": -314.81249999999983,
+          "avg_queue_length": 8.744791666666666,
+          "avg_waiting_time": 15.636939840392879,
+          "vehicles_passed": 43598
+        },
+        {
+          "episode": 6,
+          "total_reward": -315.78749999999997,
+          "avg_queue_length": 8.771875,
+          "avg_waiting_time": 15.706545426642112,
+          "vehicles_passed": 49232
+        },
+        {
+          "episode": 7,
+          "total_reward": -293.8624999999999,
+          "avg_queue_length": 8.162847222222222,
+          "avg_waiting_time": 13.952900552486188,
+          "vehicles_passed": 34653
+        },
+        {
+          "episode": 8,
+          "total_reward": -303.42500000000007,
+          "avg_queue_length": 8.428472222222222,
+          "avg_waiting_time": 14.74225751995089,
+          "vehicles_passed": 39226
+        },
+        {
+          "episode": 9,
+          "total_reward": -333.04999999999995,
+          "avg_queue_length": 9.251388888888888,
+          "avg_waiting_time": 17.217633517495397,
+          "vehicles_passed": 55398
+        },
+        {
+          "episode": 10,
+          "total_reward": -310.8625,
+          "avg_queue_length": 8.635069444444444,
+          "avg_waiting_time": 15.357949662369553,
+          "vehicles_passed": 40669
+        },
+        {
+          "episode": 11,
+          "total_reward": -313.3000000000001,
+          "avg_queue_length": 8.702777777777778,
+          "avg_waiting_time": 15.482972682627379,
+          "vehicles_passed": 38340
+        },
+        {
+          "episode": 12,
+          "total_reward": -298.3874999999999,
+          "avg_queue_length": 8.288541666666667,
+          "avg_waiting_time": 14.500360650705954,
+          "vehicles_passed": 36412
+        },
+        {
+          "episode": 13,
+          "total_reward": -296.5124999999999,
+          "avg_queue_length": 8.236458333333333,
+          "avg_waiting_time": 14.436072744014734,
+          "vehicles_passed": 32181
+        },
+        {
+          "episode": 14,
+          "total_reward": -318.73750000000007,
+          "avg_queue_length": 8.853819444444444,
+          "avg_waiting_time": 16.00223296500921,
+          "vehicles_passed": 52546
+        },
+        {
+          "episode": 15,
+          "total_reward": -317.7874999999998,
+          "avg_queue_length": 8.827430555555555,
+          "avg_waiting_time": 15.977378759975444,
+          "vehicles_passed": 38643
+        },
+        {
+          "episode": 16,
+          "total_reward": -320.5624999999999,
+          "avg_queue_length": 8.90451388888889,
+          "avg_waiting_time": 16.110581645181092,
+          "vehicles_passed": 48367
+        },
+        {
+          "episode": 17,
+          "total_reward": -314.34999999999985,
+          "avg_queue_length": 8.731944444444444,
+          "avg_waiting_time": 15.487384898710866,
+          "vehicles_passed": 53398
+        },
+        {
+          "episode": 18,
+          "total_reward": -313.0374999999999,
+          "avg_queue_length": 8.69548611111111,
+          "avg_waiting_time": 15.672943523634132,
+          "vehicles_passed": 41854
+        },
+        {
+          "episode": 19,
+          "total_reward": -313.87499999999994,
+          "avg_queue_length": 8.71875,
+          "avg_waiting_time": 15.523235113566605,
+          "vehicles_passed": 41492
+        },
+        {
+          "episode": 20,
+          "total_reward": -300.6999999999994,
+          "avg_queue_length": 8.352777777777778,
+          "avg_waiting_time": 14.806806322897483,
+          "vehicles_passed": 35654
+        },
+        {
+          "episode": 21,
+          "total_reward": -294.9999999999999,
+          "avg_queue_length": 8.194444444444445,
+          "avg_waiting_time": 14.105839472068753,
+          "vehicles_passed": 38447
+        },
+        {
+          "episode": 22,
+          "total_reward": -297.9499999999998,
+          "avg_queue_length": 8.276388888888889,
+          "avg_waiting_time": 14.767180785758134,
+          "vehicles_passed": 46409
+        },
+        {
+          "episode": 23,
+          "total_reward": -322.77499999999986,
+          "avg_queue_length": 8.965972222222222,
+          "avg_waiting_time": 16.41664364640884,
+          "vehicles_passed": 49970
+        },
+        {
+          "episode": 24,
+          "total_reward": -326.5749999999998,
+          "avg_queue_length": 9.071527777777778,
+          "avg_waiting_time": 16.750583179864947,
+          "vehicles_passed": 53120
+        },
+        {
+          "episode": 25,
+          "total_reward": -322.4874999999998,
+          "avg_queue_length": 8.957986111111111,
+          "avg_waiting_time": 16.224079189686925,
+          "vehicles_passed": 60878
+        },
+        {
+          "episode": 26,
+          "total_reward": -326.6999999999998,
+          "avg_queue_length": 9.075,
+          "avg_waiting_time": 16.67888275015347,
+          "vehicles_passed": 47992
+        },
+        {
+          "episode": 27,
+          "total_reward": -288.8750000000001,
+          "avg_queue_length": 8.024305555555555,
+          "avg_waiting_time": 13.863075506445671,
+          "vehicles_passed": 38912
+        },
+        {
+          "episode": 28,
+          "total_reward": -319.6999999999998,
+          "avg_queue_length": 8.880555555555556,
+          "avg_waiting_time": 15.975821055862493,
+          "vehicles_passed": 52642
+        },
+        {
+          "episode": 29,
+          "total_reward": -294.1875000000001,
+          "avg_queue_length": 8.171875,
+          "avg_waiting_time": 13.961364333947207,
+          "vehicles_passed": 39013
+        }
+      ],
+      "config": {
+        "env": {
+          "type": "mock_traffic",
+          "n_agents": 4,
+          "episode_length": 1800,
+          "decision_frequency": 10,
+          "state_dim": 25,
+          "action_dim": 4,
+          "max_queue_length": 20
+        },
+        "agent": {
+          "type": "dqn",
+          "learning_rate": 0.001,
+          "gamma": 0.97,
+          "epsilon_start": 1.0,
+          "epsilon_end": 0.1,
+          "epsilon_decay": 5000,
+          "buffer_size": 50000,
+          "target_update_freq": 500,
+          "hidden_dim": 128
+        },
+        "training": {
+          "algorithm": "offline",
+          "episodes": 15,
+          "batch_size": 64,
+          "epochs_per_episode": 1,
+          "update_frequency": 1,
+          "gradient_clip_norm": 1.0
+        },
+        "ctde": {
+          "central_critic": true,
+          "critic_lr": 0.0005,
+          "critic_hidden_dim": 128
+        },
+        "reward": {
+          "alpha": 1.0,
+          "normalize": true,
+          "clip_reward": 5.0
+        },
+        "evaluation": {
+          "episodes": 10,
+          "frequency": 5,
+          "render": false
+        },
+        "logging": {
+          "log_frequency": 10,
+          "save_frequency": 20,
+          "tensorboard": true
+        },
+        "seed": 42,
+        "dataset": {
+          "synthetic_path": "datasets/synthetic",
+          "semi_synthetic_path": "datasets/semi_synthetic"
+        },
+        "experiment": {
+          "name": "experiment_01_quick",
+          "description": "Quick DQN training with reduced complexity and fewer epochs"
+        }
+      }
+    }
+  },
+  "evaluation_config": {
+    "episodes": 30,
+    "deterministic": true,
+    "baseline_comparison": "fixed_time"
+  }
+}

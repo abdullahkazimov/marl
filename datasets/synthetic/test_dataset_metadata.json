@@ -1,0 +1,39 @@
+{
+  "dataset_info": {
+    "type": "synthetic",
+    "creation_date": "2025-09-17T10:33:42.565264",
+    "episodes": 2,
+    "policy": "random",
+    "n_agents": 4,
+    "episode_length": 3600,
+    "decision_frequency": 10,
+    "max_queue_length": 20
+  },
+  "statistics": {
+    "total_transitions": 2,
+    "avg_episode_reward": {
+      "mean": -46.51250000000012,
+      "std": 4.800000000000075,
+      "min": -51.31250000000019,
+      "max": -41.71250000000004
+    },
+    "avg_queue_length": {
+      "mean": 0.6460069444444445,
+      "std": 0.06666666666666671,
+      "min": 0.5793402777777777,
+      "max": 0.7126736111111112
+    },
+    "avg_waiting_time": {
+      "mean": 1.4766880193905818,
+      "std": 0.19126558171745145,
+      "min": 1.2854224376731302,
+      "max": 1.6679536011080331
+    },
+    "total_vehicles_passed": {
+      "mean": 372796.5,
+      "std": 28959.5,
+      "min": 343837.0,
+      "max": 401756.0
+    }
+  }
+}

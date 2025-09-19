@@ -1,0 +1,60 @@
+# Experiment-specific configuration overriding base settings
+
+env:
+  type: mock_traffic
+  n_agents: 4
+  episode_length: 1800  # Shorten episode length for quicker feedback (reduce from 3600)
+  decision_frequency: 10
+  state_dim: 25
+  action_dim: 4
+  max_queue_length: 20
+
+agent:
+  type: dqn
+  learning_rate: 0.001  # Increased learning rate for faster convergence
+  gamma: 0.97
+  epsilon_start: 1.0
+  epsilon_end: 0.1  # Slightly higher minimum epsilon to balance exploration
+  epsilon_decay: 5000  # Faster decay for quicker exploration -> exploitation shift
+  buffer_size: 50000
+  target_update_freq: 500  # More frequent target network updates for faster learning
+  hidden_dim: 128  # Reduce hidden dimensions for quicker learning (down from 256)
+
+training:
+  algorithm: offline
+  episodes: 15        # Total number of episodes
+  batch_size: 64
+  epochs_per_episode: 1  # 1 epoch per episode to get a total of 15 epochs
+  update_frequency: 1
+  gradient_clip_norm: 1.0
+
+
+ctde:
+  central_critic: true  # Disable central critic to simplify learning and reduce training time
+  critic_lr: 0.0005
+  critic_hidden_dim: 128  # Smaller critic network since we are not using it
+
+reward:
+  alpha: 1.0
+  normalize: true
+  clip_reward: 5.0  # Lower clip reward to encourage faster learning
+
+evaluation:
+  episodes: 10  # Fewer evaluation episodes for quicker validation
+  frequency: 5
+  render: false
+
+logging:
+  log_frequency: 10
+  save_frequency: 20  # Save more frequently
+  tensorboard: true
+
+seed: 42
+
+dataset:
+  synthetic_path: "datasets/synthetic"
+  semi_synthetic_path: "datasets/semi_synthetic"
+
+experiment:
+  name: "experiment_01_quick"
+  description: "Quick DQN training with reduced complexity and fewer epochs"

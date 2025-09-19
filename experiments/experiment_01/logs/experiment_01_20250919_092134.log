@@ -1,0 +1,15 @@
+2025-09-19 09:21:34 [INFO] marlo.experiment_01: Initializing offline trainer for experiment: experiment_01
+2025-09-19 09:21:34 [INFO] marlo.experiment_01: Set random seed: 42
+2025-09-19 09:21:34 [INFO] marlo.experiment_01: Using device: cpu
+2025-09-19 09:21:35 [INFO] marlo.experiment_01: Initialized agent: agent_0
+2025-09-19 09:21:35 [INFO] marlo.experiment_01: Initialized agent: agent_1
+2025-09-19 09:21:35 [INFO] marlo.experiment_01: Initialized agent: agent_2
+2025-09-19 09:21:35 [INFO] marlo.experiment_01: Initialized agent: agent_3
+2025-09-19 09:21:35 [INFO] marlo.experiment_01: Central critic disabled, using independent learning
+2025-09-19 09:21:35 [INFO] marlo.experiment_01: Found 3 dataset files: ['datasets/synthetic\\basic_dataset.npz', 'datasets/synthetic\\dataset_random_200ep.npz', 'datasets/semi_synthetic\\rush_hour_dataset.npz']
+2025-09-19 09:21:35 [INFO] marlo.experiment_01: Total transitions: 403200
+2025-09-19 09:21:35 [INFO] marlo.experiment_01: Offline trainer initialized successfully
+2025-09-19 09:21:35 [INFO] marlo.experiment_01: Starting offline training
+2025-09-19 09:23:19 [INFO] marlo.experiment_01: Epoch 1: Loss = 0.3671
+2025-09-19 09:26:06 [INFO] marlo.experiment_01: Training interrupted by user
+2025-09-19 09:26:07 [INFO] marlo.experiment_01: Training completed successfully

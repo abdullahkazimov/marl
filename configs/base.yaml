@@ -1,0 +1,70 @@
+# Base configuration for MARLO Traffic Signal Optimization
+
+# Environment settings
+env:
+  type: mock_traffic
+  n_agents: 4
+  episode_length: 3600  # seconds (1 hour)
+  decision_frequency: 10  # seconds between decisions
+  state_dim: 25
+  action_dim: 4
+  max_queue_length: 20
+  
+# Agent configuration
+agent:
+  type: dqn
+  learning_rate: 0.001
+  gamma: 0.99
+  epsilon_start: 1.0
+  epsilon_end: 0.05
+  epsilon_decay: 10000
+  buffer_size: 50000
+  target_update_freq: 1000
+  hidden_dim: 128
+  
+# Training configuration
+training:
+  algorithm: offline
+  episodes: 1000
+  batch_size: 64
+  epochs_per_episode: 10
+  update_frequency: 4
+  gradient_clip_norm: 1.0
+  
+# CTDE (Centralized Training Decentralized Execution) settings
+ctde:
+  central_critic: true
+  critic_lr: 0.0005
+  critic_hidden_dim: 256
+  share_parameters: false
+  
+# Reward function
+reward:
+  alpha: 1.0  # weight for stopped vehicle ratio
+  normalize: true
+  clip_reward: 10.0
+  
+# Evaluation settings
+evaluation:
+  episodes: 100
+  frequency: 50  # evaluate every N training episodes
+  render: false
+  
+# Logging and checkpointing
+logging:
+  log_frequency: 10
+  save_frequency: 100
+  tensorboard: true
+  
+# Random seeds
+seed: 42
+
+# Dataset paths
+dataset:
+  synthetic_path: "datasets/synthetic"
+  semi_synthetic_path: "datasets/semi_synthetic"
+  
+# Experiment settings
+experiment:
+  name: "base_experiment"
+  description: "Baseline DQN with CTDE for traffic signal optimization"

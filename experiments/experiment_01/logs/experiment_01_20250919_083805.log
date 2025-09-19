@@ -1,0 +1,13 @@
+2025-09-19 08:38:05 [INFO] marlo.experiment_01: Initializing offline trainer for experiment: experiment_01
+2025-09-19 08:38:05 [INFO] marlo.experiment_01: Set random seed: 42
+2025-09-19 08:38:05 [INFO] marlo.experiment_01: Using device: cpu
+2025-09-19 08:38:06 [INFO] marlo.experiment_01: Initialized agent: agent_0
+2025-09-19 08:38:06 [INFO] marlo.experiment_01: Initialized agent: agent_1
+2025-09-19 08:38:06 [INFO] marlo.experiment_01: Initialized agent: agent_2
+2025-09-19 08:38:06 [INFO] marlo.experiment_01: Initialized agent: agent_3
+2025-09-19 08:38:06 [INFO] marlo.experiment_01: Initialized central critic for CTDE training
+2025-09-19 08:38:06 [INFO] marlo.experiment_01: Found 3 dataset files: ['datasets/synthetic\\basic_dataset.npz', 'datasets/synthetic\\dataset_random_200ep.npz', 'datasets/semi_synthetic\\rush_hour_dataset.npz']
+2025-09-19 08:38:06 [INFO] marlo.experiment_01: Total transitions: 403200
+2025-09-19 08:38:06 [INFO] marlo.experiment_01: Offline trainer initialized successfully
+2025-09-19 08:38:06 [INFO] marlo.experiment_01: Starting offline training
+2025-09-19 08:38:06 [ERROR] marlo.experiment_01: Training failed with error: mat1 and mat2 shapes cannot be multiplied (64x25 and 100x256)

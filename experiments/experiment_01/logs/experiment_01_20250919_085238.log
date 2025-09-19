@@ -1,0 +1,3 @@
+2025-09-19 08:52:38 [INFO] marlo.experiment_01: Initializing offline trainer for experiment: experiment_01
+2025-09-19 08:52:38 [INFO] marlo.experiment_01: Set random seed: 42
+2025-09-19 08:52:38 [INFO] marlo.experiment_01: Using device: cuda

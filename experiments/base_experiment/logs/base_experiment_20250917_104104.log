@@ -1,0 +1,3 @@
+2025-09-17 10:41:04 [INFO] marlo.base_experiment: Initializing offline trainer for experiment: base_experiment
+2025-09-17 10:41:04 [INFO] marlo.base_experiment: Set random seed: 42
+2025-09-17 10:41:04 [INFO] marlo.base_experiment: Using device: cpu
